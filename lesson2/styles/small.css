@@ -1,0 +1,16 @@
+@media only screen and (max-width: 708px) {
+
+    #exampleContainer {
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr;
+    }
+
+    header, footer {
+        width: 343px;
+    }
+
+    header {
+        margin-bottom: 15px;
+    }
+}

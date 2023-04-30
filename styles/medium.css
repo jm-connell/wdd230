@@ -1,0 +1,31 @@
+@media only screen and (min-width: 32.5em) {
+
+    html {
+        background-color: rgb(35, 40, 66);
+    }
+
+    header, footer {
+        background-color: rgb(154, 158, 179);
+        color: black;
+    }
+
+    body {
+        color: white;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: white;
+    }
+
+    
+
+
+}
