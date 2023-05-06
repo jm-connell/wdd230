@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600&display=swap');
+
+html {
+    font-family: 'Inter Tight', sans-serif;
+}
+
+body {
+    background-color: #434E6D;
+    color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 0em 1em;
+}
+
+header {
+    color: white;
+}
+
+footer {
+    padding-top: 20px;
+}
+
+nav {
+    background-color: white;
+    font-size: 1.3em;
+}
+
+nav ul {
+    display: flex;
+    text-align: center;
+    padding: 0px;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+a:link {
+    color: #434E6D;
+}
+
+a:visited {
+    color: #434E6D;
+}
+
+a:hover {
+    text-shadow: 1px 1px #00000028;
+}
+
+.home {
+    padding-top: 5px;
+}
