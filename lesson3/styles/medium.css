@@ -1,0 +1,21 @@
+@media (min-width: 32.5em) {
+
+    body {
+        padding: 0em 4em;
+        max-width: 800px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        flex: 1 1 auto;
+        padding: 10px 0px;
+        margin: auto;
+    }
+
+
+}
