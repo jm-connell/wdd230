@@ -1,0 +1,42 @@
+@media (min-width: 32.5rem) {
+
+    nav {
+        display: inline;
+        grid-column: 1 span 3;
+    }
+    
+    nav ul {
+        list-style: none;
+        flex: 1 1 100%;
+    }
+    
+    nav ul li {
+        flex: 1;
+        display: inline;
+    }
+
+    .footerInfo {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        column-gap: 15px;
+    }
+
+    .join {
+        display: inline;
+    }
+
+    .social {
+        flex-direction: row;
+    }
+    
+    .social a {
+        padding: 0 10px;
+    }
+
+    header p {
+        display: none;
+    }
+   
+
+}
