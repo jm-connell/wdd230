@@ -24,12 +24,16 @@ nav {
 }
 
 nav ul li {
+    font-size: 1.2rem;
     flex: 1 1 100%;
     display: none;
 }
 
 nav ul {
+    display: flex;
     list-style: none;
+    justify-content: space-between;
+    padding-left: 100px;
 }
 
 header {
