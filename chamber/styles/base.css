@@ -18,13 +18,28 @@ main {
     grid-template-columns: 1fr;
 }
 
+header {
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+}
+
 nav {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
 }
 
-nav ul li {
+.headerDate {
     font-size: 1.2rem;
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    text-align: center;
+    padding: 5px 0;
+}
+
+nav ul li {
+    font-size: 1.3rem;
     flex: 1 1 100%;
     display: none;
 }
@@ -34,13 +49,6 @@ nav ul {
     list-style: none;
     justify-content: space-between;
     padding-left: 100px;
-}
-
-header {
-    color: white;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    align-items: center;
 }
 
 section {
@@ -101,6 +109,11 @@ header p {
 
 .responsive li {
     display: block;
+}
+
+.footerText {
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 /* Content boxes */
