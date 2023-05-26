@@ -45,8 +45,7 @@ nav ul li {
 }
 
 nav ul {
-    display: flex;
-    flex-direction: column;
+    display: none;
     list-style: none;
     justify-content: space-between;
     padding-top: 15px;
@@ -114,6 +113,11 @@ header p {
 
 .responsive li {
     display: block;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: column;
 }
 
 .footerText {
