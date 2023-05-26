@@ -2,20 +2,22 @@
 
     nav {
         display: inline;
-        grid-column: 1 span 3;
+        grid-column: 1 / 5;
     }
     
     nav ul {
         list-style: none;
         flex: 1 1 100%;
-        padding-left: 100px;
         flex-direction: row;
+        padding-left: 0;
+        margin: 1rem auto 1.5rem auto;
     }
     
     nav ul li {
         flex: 1;
         display: inline;
         display: none;
+        text-align: center;
     }
 
     .footerInfo {
