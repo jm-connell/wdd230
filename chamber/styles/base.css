@@ -26,14 +26,15 @@ header {
 }
 
 nav {
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
     grid-row: 2 / 3;
+    margin-left: 0;
 }
 
 .headerDate {
     font-size: 1.2rem;
     grid-row: 3 / 4;
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
     text-align: center;
     padding: 5px 0;
 }
@@ -41,14 +42,14 @@ nav {
 nav ul li {
     font-size: 1.3rem;
     flex: 1 1 100%;
-    display: none;
 }
 
 nav ul {
     display: flex;
+    flex-direction: column;
     list-style: none;
     justify-content: space-between;
-    padding-left: 100px;
+    padding-top: 15px;
 }
 
 section {
