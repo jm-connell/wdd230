@@ -16,7 +16,7 @@
 
     <header>
 
-        <img class="logo" src="images/saginawlogo.png" alt="Saginaw Chamber Logo">
+        <img class="logo" src="images/webp-logo.webp" alt="Saginaw Chamber Logo">
 
         <div class="header-title">
             <h1>Saginaw</h1>
@@ -52,7 +52,12 @@
 
         <section class="hero">
             <h3>Welcome to the Saginaw Chamber of Commerce!</h3>
-            <img src="images/saginaw-downtown.jpg" alt="placeholder image">
+            <!-- <img src="images/saginaw-downtown.jpg" alt="placeholder image"> -->
+            <picture>
+                <source srcset="images/medium-hero.jpg" media="(min-width: 450px) and (max-width: 799px)">
+                <source srcset="images/large-hero.jpg" media="(min-width: 800px)">
+                <img src="images/small-hero.jpg" alt="small hero image">
+            </picture>
         </section>
 
 
@@ -76,7 +81,10 @@
 
         <section class="weather">
             <h3>Weather</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quasi sit odit illo? Obcaecati sint fugit vitae consectetur officiis. Repudiandae ipsam accusamus minus quos</p>
+            <h4><span class="temperature">42</span> °F</h4>
+            <p>Raining</p>
+            <p>Wind Speed: <span class="wind-speed">8</span> mph</p>
+            <p>Wind Chill: <span class="wind-chill"></span> °F</p>
         </section>
 
 
@@ -121,5 +129,6 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
