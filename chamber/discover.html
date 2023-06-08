@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Chamber of Commerce Homepage">
+        <link rel="icon" href="saginaw-favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <title>Discover - Saginaw Chamber</title>
+    </head>
+<body>
+    <header>
+        <img class="logo" src="images/webp-logo.webp" alt="Saginaw Chamber Logo">
+
+        <div class="header-title">
+            <h1>Saginaw</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+
+        <!-- Links to social media -->
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook-logo.png" alt="Facebook Logo"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin-logo.png" alt="Linkedin Logo"></a>
+        </div>
+
+        <!-- Nav links to other pages -->
+        <p class="hambuger-button"><a href="#" onclick="toggleMenu()">☰</a></p>
+        <nav>
+            <ul class="navigation">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Div for js date -->
+        <div class="headerDate"></div>
+    </header>
+
+    <main class="discover-main">
+        
+        <div class="gallery">
+            <figure>
+                <img class="gallery-image" src="images/hoyt-library.jpg" alt="Hoyt Library" loading="lazy">
+                <figcaption>Hoyt Public Library</figcaption>
+            </figure>
+
+            <figure>
+                <img class="gallery-image" src="images/rail-trail.jpg" alt="Saginaw Valley Rail Trail" loading="lazy">
+                <figcaption>Saginaw Valley Rail Trail</figcaption>
+            </figure>
+
+            <figure>
+                <img class="gallery-image" src="images/shiawassee-flats.jpg" alt="Shiawassee Flats" loading="lazy">
+                <figcaption>Shiawassee Flats at the Shiawassee National Wildlife Refuge</figcaption>
+            </figure>
+
+            <figure>
+                <img class="gallery-image" src="images/fuzzys.jpg" alt="Fuzzy's Restaurant" loading="lazy">
+                <figcaption>Fuzzy's Restaurant</figcaption>
+            </figure>
+
+            <figure>
+                <img class="gallery-image" src="images/firstmerit-event-park.jpg" alt="FirstMerit Bank Event Park" loading="lazy">
+                <figcaption>FirstMerit Bank Event Park</figcaption>
+            </figure>
+        </div>
+
+        <div class="statistics">
+            <div class="general-statistics">
+                <h3>Other Statistics</h3>
+                <p>Land Area (mi<sup>2</sup>): 17.81 sq mi</p>
+                <p>Water Area (mi<sup>2</sup>): 0.71 sq mi</p>
+                <p>Population (2020): 44,202</p>
+                <p>Population Density (mi<sup>2</sup>): 2,585.52/sq mi</p>
+                <p>2021 Growth Rate: -0.5%</p>
+            </div>
+
+            <div class="racial-demographic">
+                <h3>Racial Composition of Saginaw</h3>
+                <p>White: 35.9%</p>
+                <p>Black/African American: 45.0%</p>
+                <p>Hispanic or Latino: 15.7%</p>
+                <p>Other: 3.4%</p>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footerInfo">
+            <img class="logo" src="images/saginawlogo.png" alt="Saginaw Chamber Logo">
+            <div class="info1">
+                <h3>Saginaw Chamber of Commerce</h3>
+                <p>515 N Washington Ave</p>
+                <p>Saginaw, MI 48607</p>
+            </div>
+            <div class="info2">
+                <p>info@saginawchamber.org</p>
+                <p>(989) 752-7161</p>
+                <p><a href="https://www.google.com/maps/dir//saginaw+chamber+of+commerce+phone/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8823c27dfbf84619:0xdbd292bedc8cc417?sa=X&ved=2ahUKEwjB4dfAtvP-AhVhO0QIHXZzB30Q9Rd6BAhVEAU">Get Directions</a></p>
+            </div>
+        </div>
+
+        <div>
+            <hr>
+            <p class="footerText"></p>
+        </div>
+
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

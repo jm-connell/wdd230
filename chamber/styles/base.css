@@ -142,6 +142,32 @@ header p {
     margin: 0;
 }
 
+.discover-main {
+    /* Not sure why there's two columns
+    in main but this fixes it */
+    grid-template-columns: 1fr;
+}
+
+.gallery {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+}
+
+.gallery-image {
+    width: 600px;
+    border-radius: 4px;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.statistics div {
+    margin: auto;
+}
+
 /* Temporary CSS for heavy image optimization */
 .hero picture {
     width: 100%;
