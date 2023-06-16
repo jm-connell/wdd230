@@ -1,0 +1,30 @@
+html {
+    background-color: rgb(137, 145, 160);
+}
+
+.acme-table {
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+thead tr th {
+    padding: 3px 5px;
+}
+
+tbody tr th{
+    text-align: center;
+    padding: 3px 4px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(221, 221, 221);
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+}
