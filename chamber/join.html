@@ -43,11 +43,87 @@
     </header>
 
 
+
     <main class="join-main">
-        
+        <form class="join-form" method="get" action="thankyou.html">
+
+            <!-- First Name -->
+            <label for="first-name">First Name: </label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <!-- Last Name -->
+            <label for="last-name">Last Name: </label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <!-- Business position title -->
+            <label for="position-title">Business Position Title: </label>
+            <input type="text" id="position-title" name="position-title" pattern="[A-Za-z\s\-]{7,}">
+
+            <!-- Email -->
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+            <!-- Business name/title -->
+            <label for="business-name">Business Name/Title: </label>
+            <input type="text" id="business-name" name="business-name" required>
+
+            <label for="membership-level">Membership Level: </label>
+            <select id="membership-level" name="membership-level">
+              <option value="np-membership">NP Membership</option>
+              <option value="bronze-membership">Bronze Membership</option>
+              <option value="silver-membership">Silver Membership</option>
+              <option value="gold-membership">Gold Membership</option>
+            </select>
+
+        </form>
+
+        <div class="membership-descriptions">
+
+            <div>
+                <h3>Non-Profit (NP) Membership - Free</h3>
+                <h4>Benefits</h4>
+                <ul>
+                    <li>Opportunity to host ribbon cutting services (Maximum of 1 per year)</li>
+                    <li>Listing in Chamber Business Directory</li>
+                    <li>Opportunity to participate in open Chamber committees or task forces</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Bronze Membership - $500/year</h3>
+                <h4>Benefits</h4>
+                <ul>
+                    <li>Enhanced listing in Chamber Business Directory</li>
+                    <li>Invitation to be spotlighted on Chamber's social media platforms</li>
+                    <li>Invitation to special Chamber member events</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Silver Membership - $1,000/year</h3>
+                <h4>Benefits</h4>
+                <ul>
+                    <li>Invitation to be a guest on radio program sponsored by the Saginaw Chamber</li>
+                    <li>Opportunity for annual virtual membership orientation by business development team member</li>
+                    <li>Invitation to be spotlighted on Chamber's social media platforms</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Gold Membership - $1,500/year</h3>
+                <h4>Benefits</h4>
+                <ul>
+                    <li>Introduction to Sponsorship Packages</li>
+                    <li>Premium Chamber Business Directory Listing</li>
+                    <li>Invitation to exclusive Gold membership social events</li>
+                </ul>
+            </div>
+
+        </div>
         
 
     </main>
+
 
 
     <footer>

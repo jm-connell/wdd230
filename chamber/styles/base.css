@@ -168,6 +168,14 @@ header p {
     margin: auto;
 }
 
+.join-form input, select {
+    display: block;
+}
+
+
+
+
+
 /* Temporary CSS for heavy image optimization */
 .hero picture {
     width: 100%;
@@ -185,6 +193,15 @@ header p {
     background-color: rgba(0, 0, 0, 0.664);
     font-size: 1.5rem;
 }
+
+
+
+
+
+
+
+
+
 
 /* Content boxes */
 section {
