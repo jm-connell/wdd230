@@ -168,9 +168,28 @@ header p {
     margin: auto;
 }
 
-.join-form input, select {
-    display: block;
+.join-form {
+    margin-top: 40px;
 }
+
+.join-form input, select, textarea {
+    display: block;
+    margin: auto auto 0.5rem 0;
+}
+
+.join-main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.membership-descriptions {
+    margin-top: 20px;
+}
+
+.thankyou-main h1 {
+    margin: auto;
+}
+
 
 
 
