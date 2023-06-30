@@ -20,6 +20,10 @@
         flex-direction: row;
     }
 
+    .list-businesses section { 
+        grid-template-columns: auto auto auto auto auto;
+    }
+
     .footerInfo {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -42,22 +46,12 @@
     footer {
         margin-top: 100px;
     }
-   
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
 
     .join-main {
         grid-template-columns: auto auto;
         grid-column-gap: 30px;
         margin: 30px auto;
     }
-
-
-
-
-
-
 
 
     .hero {

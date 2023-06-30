@@ -15,7 +15,6 @@ body {
 main {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr;
 }
 
 header {
@@ -190,6 +189,55 @@ header p {
     margin: auto;
 }
 
+/* Styling for business cards */
+.directory-main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.business-cards {
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.business-cards section{
+    text-align: center;
+    width: 275px;
+    margin: 10px auto;
+}
+
+.view-toggle a {
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+.view-toggle {
+    margin-bottom: 10px;
+}
+
+/* list view of cards */
+.list-businesses {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.list-businesses section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 10px;
+}
+
+.list-businesses section h2 {
+    font-size: 1.1rem;
+}
+
+.list-businesses section img {
+    display: none;
+}
 
 
 

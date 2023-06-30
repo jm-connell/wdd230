@@ -16,3 +16,8 @@ const day = date.getDay;
 if (day == 1 || day == 2) {
     document.querySelector(".banner").classList.toggle("meeting");
 }
+
+/* toggle business view */
+function toggleView() {
+    document.querySelector('.business-cards').classList.toggle('list-businesses')
+}

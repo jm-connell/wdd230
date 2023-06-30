@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce Homepage">
+    <meta name="description" content="Chamber of Commerce Directory Page">
     <link rel="icon" href="saginaw-favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <title>Saginaw Chamber Homepage</title>
+    <title>Saginaw Chamber Directory</title>
 </head>
 <body>
 
     <header>
-
         <img class="logo" src="images/webp-logo.webp" alt="Saginaw Chamber Logo">
 
         <div class="header-title">
@@ -45,65 +44,20 @@
 
         <!-- banner for mon/tue -->
         <div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
-
     </header>
 
-    <main class="index-main">
-
-        <section class="hero">
-            <h3>Welcome to the Saginaw Chamber of Commerce!</h3>
-            <!-- <img src="images/saginaw-downtown.jpg" alt="placeholder image"> -->
-            <picture>
-                <source srcset="images/medium-hero.jpg" media="(min-width: 450px) and (max-width: 799px)">
-                <source srcset="images/large-hero.jpg" media="(min-width: 800px)">
-                <img src="images/small-hero.jpg" alt="small hero image">
-            </picture>
-        </section>
 
 
-        <section class="news">
-            <h3>News</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quasi sit odit illo? Obcaecati sint fugit vitae consectetur officiis. Repudiandae ipsam accusamus minus quo.</p>
-        </section>
+    <main class="directory-main">
 
+        <div class="view-toggle">
+            <a href="#" onclick="toggleView()">Toggle View</a>
+        </div>
 
-        <section class="join">
-            <h3>Join</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quasi sit odit illo? Obcaecati sint fugit vitae consectetur officiis. Repudiandae ipsam accusamus minus quos</p>
-        </section>
-
-
-        <section class="event">
-            <h3>Event</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum temporibus nobis excepturi nostrum, id tempore ipsum sit ducimus doloribus, ea dolorum odio autem nulla offi</p>
-        </section>
-
-
-        <section class="weather">
-            <h3>Weather</h3>
-            <h4><span class="temperature">42</span> °F</h4>
-            <p>Raining</p>
-            <p>Wind Speed: <span class="wind-speed">8</span> mph</p>
-            <p>Wind Chill: <span class="wind-chill"></span> °F</p>
-        </section>
-
-
-        <section class="spotlight">
-            <div class="spotlight1">
-                <h3>Spotlight 1</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quasi sit odit illo? Obcaecati sint fugit vitae consectetur officiis. Repudiandae ipsam accusamus minus quos</p>
-            </div>
-            <div class="spotlight2">
-                <h3>Spotlight 2</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quasi sit odit illo? Obcaecati sint fugit vitae consectetur officiis. Repudiandae ipsam accusamus minus quos</p>
-            </div>
-            <div class="spotlight3">
-                <h3>Spotlight 3</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quasi sit odit illo? Obcaecati sint fugit vitae consectetur officiis. Repudiandae ipsam accusamus minus quos</p>
-            </div>
-        </section>
+        <div class="business-cards"></div>
 
     </main>
+
 
 
     <footer>
@@ -126,9 +80,10 @@
             <hr>
             <p class="footerText"></p>
         </div>
-
     </footer>
 
+
+    <script src="scripts/business-cards.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/lastvisit.js"></script>
