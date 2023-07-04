@@ -21,3 +21,8 @@ if (day == 1 || day == 2) {
 function toggleView() {
     document.querySelector('.business-cards').classList.toggle('list-businesses')
 }
+
+/* add datetime to join form */
+function setDateTime() {
+    document.querySelector('#datetime').value = date;
+}
