@@ -1,16 +1,58 @@
-@media only screen and (max-width: 708px) {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-    #exampleContainer {
-        display: grid;
-        grid-gap: 0px;
-        grid-template-columns: 1fr;
-    }
-
-    header, footer {
-        width: 343px;
-    }
-
-    header {
-        margin-bottom: 15px;
-    }
+html {
+    display: table;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(10, 32, 50);
 }
+
+header, footer {
+    color: white;
+    padding: 5px 0px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+}
+
+h3 {
+    margin: auto;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+img {
+    padding: 5px 2.5%;
+}
+
+.example {
+    display: grid;
+    border-radius: 15px 15px 0px 0px;
+    border: 1px solid rgb(194, 194, 194);
+    background-color: rgb(238, 238, 238);
+    margin: 10px 0px;
+    max-width: 340px;
+}
+
+.example p, a {
+    padding: 0px 10px;
+    font-size: 16px;
+}
+
+
+#exampleContainer {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr;
+}
+header, footer {
+    width: 343px;
+}
+header {
+    margin-bottom: 15px;
+}
+

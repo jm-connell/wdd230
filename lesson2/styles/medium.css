@@ -1,4 +1,5 @@
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1068px) and (min-width: 700px) {
+
     #exampleContainer {
     display: grid;
     grid-gap: 20px;
