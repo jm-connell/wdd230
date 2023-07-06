@@ -19,7 +19,7 @@ async function apiFetch() {
     } catch (error) {
         console.log(error);
     }
-  }
+}
 
 
 function  displayResults(weatherData) {
@@ -33,13 +33,4 @@ function  displayResults(weatherData) {
   captionDesc.textContent = desc;
 }
 
-/* function displayResults(weatherData) {
-    // update temp element
-    currentTemp.innerHTML = weatherData.main.temp;
-
-
-
-} */
-
-  
-  apiFetch();
+apiFetch();

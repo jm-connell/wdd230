@@ -81,9 +81,16 @@
 
         <section class="weather">
             <h3>Weather</h3>
-            <h4><span class="temperature">42</span> °F</h4>
-            <p>Raining</p>
-            <p>Wind Speed: <span class="wind-speed">8</span> mph</p>
+
+            <div>
+                <p>Temperature in Saginaw: <span id="current-temp"></span> &deg;F</p>
+                <figure>
+                    <img src="" alt="" id="weather-icon" />
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+
+            <p>Wind Speed: <span class="wind-speed"></span> mph</p>
             <p>Wind Chill: <span class="wind-chill"></span> °F</p>
         </section>
 
@@ -129,8 +136,8 @@
 
     </footer>
 
+    <script src="scripts/weatherapi.js"></script>
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/lastvisit.js"></script>
 </body>
 </html>
