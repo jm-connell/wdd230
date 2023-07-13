@@ -97,4 +97,11 @@
         transition: 0.2s;
     }
 
+    /* Styling for contact page */
+    .contact-main {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+
 }

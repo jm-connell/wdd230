@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thank You Page">
+    <meta name="description" content="Contact Saginaw Chamber of Commerce">
     <link rel="icon" href="saginaw-favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <title>Thank You</title>
+    <title>Contact Saginaw Chamber</title>
 </head>
 <body>
+
     <header>
+
         <img class="logo" src="images/webp-logo.webp" alt="Saginaw Chamber Logo">
 
         <div class="header-title">
@@ -41,10 +43,63 @@
 
         <!-- Div for js date -->
         <div class="headerDate"></div>
+
+        <!-- banner for mon/tue -->
+        <div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+
     </header>
 
-    <main class="thankyou-main">
-        <h2>Thank you for joining the Saginaw Chamber of Commerce!</h2>
+
+    <main class="contact-main">
+        <div class="contact-info">
+            <h2>General Inquiries</h2>
+            <p class="contact-email">info@saginawchamber.org</p>
+
+            <h2>Jeff Smith - Chamber President</h2>
+            <p class="contact-email">smithj@saginawchamber.org</p>
+
+            <h2>Laura Emerson - Operations Director</h2>
+            <p class="contact-email">emersonj@saginawchamber.org</p>
+
+            <h2>Office Hours</h2>
+            <p>Monday-Thursday: 9am-3pm</p>
+            <p>Friday: 10am-2pm</p>
+            <p>Saturday-Sunday: Closed</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/submit-contact-form" method="get">
+                <div class="contact-input">
+                  <label for="first-name" class="form-label">*First Name:</label>
+                  <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="contact-input">
+                  <label for="last-name" class="form-label">*Last Name:</label>
+                  <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="contact-input">
+                  <label for="email" class="form-label">*Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="contact-input">
+                  <label for="company-name" class="form-label">Company Name:</label>
+                  <input type="text" id="company-name" name="company-name">
+                </div>
+                <div class="contact-input">
+                  <label for="phone" class="form-label">Phone:</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="contact-input">
+                  <label for="comments" class="form-label">*Comments/Questions</label>
+                  <textarea id="comments" name="comments" required></textarea>
+                </div>
+                <div class="contact-submit">
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+        </div>
+
     </main>
 
 
@@ -71,9 +126,8 @@
 
     </footer>
 
-
+    <script src="scripts/weatherapi.js"></script>
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/lastvisit.js"></script>
 </body>
 </html>
