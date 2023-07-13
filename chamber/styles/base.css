@@ -228,7 +228,7 @@ header p {
     width: 100%;
     display: grid;
     grid-template-columns: auto;
-    grid-column-gap: 10px;
+    grid-column-gap: 0.5rem;
 }
 
 .list-businesses section h2 {
@@ -261,12 +261,9 @@ header p {
     font-size: 1.5rem;
 }
 
-
-
-
-
-
-
+.index-main {
+    grid-gap: 0.5rem;
+}
 
 
 
@@ -275,8 +272,16 @@ section {
     border-radius: 4px;
     background-color: #ffde8a;
     color: black;
-    margin-bottom: 1rem;
     padding: 0.5rem;
+}
+
+section:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.568);
+    transition: 0.2s;
+}
+
+section h3 {
+    text-align: center;
 }
 
 .join {
@@ -291,12 +296,18 @@ section {
     background-color: #404e6d;
 }
 
+.hero:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.568);
+    transition: 0.2s;
+}
+
 .event {
     grid-row: 2 / 3;
 }
 
 .weather {
     grid-row: 3 / 4;
+    text-align: center;
 }
 
 .news {

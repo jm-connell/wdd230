@@ -24,6 +24,8 @@
         grid-template-columns: auto auto auto auto auto;
     }
 
+    
+
     .footerInfo {
         display: grid;
         grid-template-columns: auto auto auto;
