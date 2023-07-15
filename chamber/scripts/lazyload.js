@@ -9,10 +9,11 @@ function preloadImage(img) {
         return;
     }
 
-    // set live image src to full-size image, overwriting placeholder
-    img.src = src;
+    // add small delay to see placeholder get replaced
+    setTimeout(() => {
+        img.src = src;
+     }, 200);
 }
-
 
 const imgOptions = {};
 
@@ -26,12 +27,10 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
             // once image intersects, load it then unobserve
             preloadImage(entry.target);
             imgObserver.unobserve(entry.target);
-            console.log('image unobserved')
         }
     })
 }, imgOptions);
 
 images.forEach(image => {
     imgObserver.observe(image);
-    console.log('new image observed')
 })
