@@ -1,6 +1,5 @@
 const date = new Date();
 
-
 /* toggle menu with hamburger menu */
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
