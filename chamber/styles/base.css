@@ -272,7 +272,7 @@ section {
     border-radius: 4px;
     background-color: #ffde8a;
     color: black;
-    padding: 0.5rem;
+    padding: 1rem 2rem;
 }
 
 section:hover {
@@ -282,6 +282,8 @@ section:hover {
 
 section h3 {
     text-align: center;
+    margin: auto;
+    padding: 0.5rem;
 }
 
 .join {
@@ -314,8 +316,33 @@ section h3 {
     grid-row: 4 / 5;
 }
 
-.spotlight3 {
+.spotlight > *:nth-child(3) {
     display: none;
+}
+
+.spotlight {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.spotlight div {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 2rem 3rem;
+    margin: 0.25rem 0.25rem;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.397);
+    transition: 0.2s;
+}
+
+.spotlight div:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.568);
+    transition: 0.2s;
+}
+
+.spotlight div a {
+    color: black;
+    text-decoration: underline;
 }
 
 /* Contact form styling */

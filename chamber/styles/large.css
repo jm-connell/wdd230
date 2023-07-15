@@ -10,7 +10,7 @@
     }
 
     .index-main {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 275px auto 275px;
     }
 
     header p {
@@ -26,6 +26,10 @@
         grid-column: 2 / 3;
         grid-row: 1 / 3;
         margin: auto;
+    }
+
+    .hero img {
+        width: 95%;
     }
 
     .event {
@@ -52,9 +56,15 @@
         grid-column: 3 / 4;
         grid-row: 1 / 4;
         flex-direction: column;
+        padding: 0;
     }
 
-    .spotlight3 {
+    .spotlight div {
+        padding: 2rem 1rem;
+        margin: auto 0.5rem;
+    }
+
+    .spotlight > *:nth-child(3) {
         display: inline;
     }
 

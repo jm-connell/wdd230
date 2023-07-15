@@ -4,9 +4,10 @@
             "name": "Tom's Oil Changes",
             "address": "246 Delevan Street",
             "phone": "(528) 246-7763",
-            "website": "https://www.tomsoilsaginaw.com",
+            "website": "https://www.tomsoil.com",
             "logo": "images/tomsoil-logo.png",
-            "membershipLevel": "Silver"
+            "membershipLevel": "Silver",
+            "slogan": "Smooth rides start here"
         },
         {
             "name": "Sheri's Flowers",
@@ -14,15 +15,17 @@
             "phone": "(528) 322-2837",
             "website": "https://www.sherisflowers.com",
             "logo": "images/sheris-logo.png",
-            "membershipLevel": "Bronze"
+            "membershipLevel": "Bronze",
+            "slogan": "Blooms that enchant"
         },
         {
             "name": "Martin's Tech Support",
             "address": "833 Center Street",
             "phone": "(528) 532-2346",
-            "website": "https://www.martinstechsaginaw.com",
+            "website": "https://www.martinstech.com",
             "logo": "images/martins-logo.png",
-            "membershipLevel": "Gold"
+            "membershipLevel": "Gold",
+            "slogan": "Tech troubles? We're here"
         },
         {
             "name": "Blazin' Burgers",
@@ -30,7 +33,8 @@
             "phone": "(528) 652-2391",
             "website": "https://www.blazinburgers.com",
             "logo": "images/burgers-logo.png",
-            "membershipLevel": "Silver"
+            "membershipLevel": "Silver",
+            "slogan": "Flavor that ignites"
         },
         {
             "name": "Craig's Cuts",
@@ -38,15 +42,17 @@
             "phone": "(528) 893-0527",
             "website": "https://www.craigscuts.com",
             "logo": "images/craigs-logo.png",
-            "membershipLevel": "Silver"
+            "membershipLevel": "Silver",
+            "slogan": "Styles transformed, confidence restored"
         },
         {
             "name": "Saginaw Country Club",
             "address": "212 Gratiot Road",
             "phone": "(528) 824-2507",
-            "website": "https://www.saginawcountryclub.com",
+            "website": "https://www.golfsaginaw.com",
             "logo": "images/countryclub-logo.png",
-            "membershipLevel": "Gold"
+            "membershipLevel": "Gold",
+            "slogan": "Elegance. Excellence. Experience"
         },
         {
             "name": "Saginaw Township Veterinary Center",
@@ -54,7 +60,8 @@
             "phone": "(528) 429-3186",
             "website": "https://www.saginawvet.com",
             "logo": "images/vet-logo.png",
-            "membershipLevel": "Gold"
+            "membershipLevel": "Gold",
+            "slogan": "Compassionate care for pets"
         },
         {
             "name": "George's Graphics",
@@ -62,7 +69,8 @@
             "phone": "(528) 318-3107",
             "website": "https://www.georgesgraphics.com",
             "logo": "images/graphics-logo.png",
-            "membershipLevel": "Bronze"
+            "membershipLevel": "Bronze",
+            "slogan": "Designs that captivate"
         },
         {
             "name": "Larry's Gym",
@@ -70,8 +78,8 @@
             "phone": "318-5037",
             "website": "https://www.larrysgym.com",
             "logo": "images/gym-logo.png",
-            "membershipLevel": "Silver"
+            "membershipLevel": "Silver",
+            "slogan": "Fitness, strength, community"
         }
-
     ]
 }
