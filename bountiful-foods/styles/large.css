@@ -32,4 +32,8 @@
         width: 50%;
         margin-left: 60px;
     }
+
+    .map-preview {
+        width: 400px;
+    }
 }

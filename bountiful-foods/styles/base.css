@@ -82,7 +82,7 @@ footer p {
 .index-main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 }
 
 .footer-image {
@@ -202,4 +202,8 @@ footer p {
 
 #special-instructions {
     height: 100px;
+}
+
+.map-preview {
+    width: 300px;
 }

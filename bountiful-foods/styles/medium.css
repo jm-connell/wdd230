@@ -16,7 +16,9 @@
         font-size: 1.7rem;
     }
 
-    
+    .map-preview {
+        width: 350px;
+    }
 
     .fresh-box h2 {
         top: 25px;
