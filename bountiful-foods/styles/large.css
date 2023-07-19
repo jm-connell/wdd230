@@ -27,4 +27,9 @@
         left: 15px;
         right: 15px;
     }
+
+    .fresh-main {
+        width: 50%;
+        margin-left: 60px;
+    }
 }
