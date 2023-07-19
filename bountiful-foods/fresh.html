@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods Homepage">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Bountiful Foods Home</title>
+</head>
+<body>
+
+    <header>
+
+        <!-- logo -->
+        <img class="logo" src="https://placehold.jp/60x60.png" alt="Bountiful Foods Logo">
+
+        <!-- collapsing navigation -->
+        <p class="hambuger-button"><a href="#" onclick="toggleMenu()">☰</a></p>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- banner image -->
+        <img class="logo" src="https://placehold.jp/450x200.png" alt="Banner image">
+
+        <!-- banner title -->
+        <h1>Welcome to Bountiful Foods</h1>
+
+        <!-- about us button -->
+        <a href="aboutus.html" class="button">About Us</a>
+
+    </header>
+
+
+    <main class="fresh-main">
+
+        <form class="drink-form" method="get" action="">
+
+            <!-- First Name -->
+            <label for="first-name">First Name: 
+            <input type="text" id="first-name" name="first-name" required></label>
+
+            <!-- Email -->
+            <label for="email">Email: 
+            <input type="email" id="email" name="email" placeholder="email@example.com" required></label>
+
+            <!-- Phone -->
+            <label for="phone">Phone Number: 
+            <input type="tel" id="phone" name="phone" placeholder="(999) 999-9999" required></label>
+
+            <!-- Membership level -->
+            <label for="membership-level">Fruit: 
+            <select id="membership-level" name="membership-level">
+              <option value="fruit1">fruit1</option>
+              <option value="fruit2">fruit2</option>
+              <option value="fruit3">fruit3</option>
+            </select></label>
+
+            <!-- Submit button -->
+            <label for="join-submit">Submit Form
+            <input type="submit" id="join-submit" value="Submit"></label>
+
+            <!-- Hidden date/time -->
+            <input type="hidden" id="datetime" name="datetime">
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>© 2023 - Bountiful Foods, LLC</p>
+        <p>contact@bountifulfoods.com</p>
+        <p>Last Modified: <span class="last-modified"></span></p>
+    </footer>
+
+
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>
