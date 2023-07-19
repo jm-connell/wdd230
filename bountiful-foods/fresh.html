@@ -48,6 +48,8 @@
 
     <main class="fresh-main">
 
+        <h2>Create a Drink</h2>
+
         <form class="drink-form" method="get" action="">
 
             <!-- First Name -->
@@ -62,20 +64,18 @@
             <label for="phone">Phone Number: 
             <input type="tel" id="phone" name="phone" placeholder="(999) 999-9999" required></label>
 
-            <!-- Membership level -->
-            <label for="membership-level">Fruit: 
-            <select id="membership-level" name="membership-level">
-              <option value="fruit1">fruit1</option>
-              <option value="fruit2">fruit2</option>
-              <option value="fruit3">fruit3</option>
-            </select></label>
+            <!-- Fruit inputs -->
+            <label for="fruit1">Fruit 1: <select class="fruit-select" name="fruit1"></select></label>
+            <label for="fruit2">Fruit 2: <select class="fruit-select" name="fruit2"></select></label>
+            <label for="fruit3">Fruit 3: <select class="fruit-select" name="fruit3"></select></label>
+
+            <!-- Special instructions -->
+            <label for="special-instructions">Special Instructions:
+            <textarea id="special-instructions" name="special-instructions" rows="4"></textarea>
 
             <!-- Submit button -->
             <label for="join-submit">Submit Form
             <input type="submit" id="join-submit" value="Submit"></label>
-
-            <!-- Hidden date/time -->
-            <input type="hidden" id="datetime" name="datetime">
 
         </form>
 

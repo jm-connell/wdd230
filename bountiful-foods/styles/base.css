@@ -183,3 +183,23 @@ footer p {
     display: flex;
     flex-direction: column;
 }
+
+
+/* drink form styling */
+.drink-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.drink-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#special-instructions {
+    height: 100px;
+}

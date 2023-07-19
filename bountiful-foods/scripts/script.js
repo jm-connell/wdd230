@@ -8,3 +8,21 @@ document.querySelector('.last-modified').textContent = lastModified;
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
+
+/* fill select options in drink form from json data*/
+fetch('fruit.json')
+  .then(response => response.json())
+  .then(data => {
+    /* get select input elements */
+    const selectInputs = document.querySelectorAll('.fruit-select');
+
+    /* add each fruit as an option */
+    selectInputs.forEach(select => {
+      data.forEach(fruit => {
+        const option = document.createElement('option');
+        option.value = fruit.name;
+        option.textContent = fruit.name;
+        select.appendChild(option);
+      });
+    });
+  });
