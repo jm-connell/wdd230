@@ -16,4 +16,15 @@
         top: 370px;
         right: 100px;
     }
+
+    .box-container {
+        grid-template-columns: 1fr auto 1fr;
+        margin: 30px auto;
+    }
+
+    .fresh-box h2 {
+        top: 15px;
+        left: 15px;
+        right: 15px;
+    }
 }
