@@ -11,13 +11,21 @@ function getHealth(fruit1, fruit2, fruit3) {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        
+        data.filter( (fruit) => {
+          return fruit;
+        });
       })
       .catch(error => {
         console.error('Error fetching JSON:', error);
-      });
+    });
+
+    //
+
 
     // return array of health info
+
+
+
 }
 
 function getFormData() {
@@ -71,15 +79,15 @@ function getFormData() {
     // display output div
     outputElement.style.display = 'block';
 
+
+
+
+
+
     // update counter in local storage
     let counter = localStorage.getItem('drinkCounter');
-
-    if (!counter) {
-      counter = 0;
-    }
-
+    if (!counter) {counter = 0;}
     counter++;
-
     localStorage.setItem('drinkCounter', counter);
     console.log('counter is at', counter);
 
