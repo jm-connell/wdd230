@@ -210,9 +210,11 @@ footer p {
 
 .form-output {
     width: 90%;
+    border: 1px solid black;
     box-shadow: 3px 3px 5px 5px #fcaec057;
     border-radius: 6px;
     padding: 0.5rem;
+    display: none;
 }
 
 .form-output h3 {

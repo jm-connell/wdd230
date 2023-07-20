@@ -10,7 +10,7 @@ function getHealth(fruit1, fruit2, fruit3) {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        console.log(data); // Use the 'data' object as needed
+        
       })
       .catch(error => {
         console.error('Error fetching JSON:', error);
@@ -42,9 +42,9 @@ function getFormData() {
     const submitDate = document.querySelector('#submit-date').value;
 
     // get health data for each fruit, returns an array
-    /* const fruit1Data = getHealth(fruit1);
+    const fruit1Data = getHealth(fruit1);
     const fruit2Data = getHealth(fruit2);
-    const fruit3Data = getHealth(fruit3); */
+    const fruit3Data = getHealth(fruit3);
 
     // create output elements
     let nameElement = document.createElement('h3');
@@ -67,7 +67,8 @@ function getFormData() {
     outputElement.appendChild(fruitElement);
     outputElement.appendChild(instructionsElement);
 
-    console.log('done creatging output element');
+    // display output div
+    outputElement.style.display = 'block';
 
 }
 
