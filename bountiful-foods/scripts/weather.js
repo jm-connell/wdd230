@@ -61,7 +61,7 @@ function displayForecast(forecastData) {
   }
 
   // update html
-  forecastElement.innerHTML = `${lowTemps[0]}/${highTemps[0]}, ${lowTemps[1]}/${highTemps[1]}, ${lowTemps[2]}/${highTemps[2]}`;
+  forecastElement.innerHTML = `<strong>${lowTemps[0]}/${highTemps[0]}, ${lowTemps[1]}/${highTemps[1]}, ${lowTemps[2]}/${highTemps[2]}</strong>`;
 
 }
 
