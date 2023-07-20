@@ -50,6 +50,8 @@
 
         <h2>Create a Drink</h2>
 
+        <div class="form-output"></div>
+
         <form class="drink-form" method="get" action="">
 
             <!-- First Name -->
@@ -65,13 +67,16 @@
             <input type="tel" id="phone" name="phone" placeholder="(999) 999-9999"></label>
 
             <!-- Fruit inputs -->
-            <label for="fruit1">* Fruit 1: <select class="fruit-select" name="fruit1" required></select></label>
-            <label for="fruit2">* Fruit 2: <select class="fruit-select" name="fruit2" required></select></label>
-            <label for="fruit3">* Fruit 3: <select class="fruit-select" name="fruit3" required></select></label>
+            <label for="fruit1">* Fruit 1: <select class="fruit-select" id="fruit1" name="fruit1" required></select></label>
+            <label for="fruit2">* Fruit 2: <select class="fruit-select" id="fruit2" name="fruit2" required></select></label>
+            <label for="fruit3">* Fruit 3: <select class="fruit-select" id="fruit3" name="fruit3" required></select></label>
 
             <!-- Special instructions -->
             <label for="special-instructions">Special Instructions:
             <textarea id="special-instructions" name="special-instructions" rows="4"></textarea>
+
+            <!-- Hidden date/time -->
+            <input type="hidden" id="submit-date" name="datetime">
 
             <!-- Submit button -->
             <label for="join-submit">Submit Form
@@ -89,7 +94,7 @@
     </footer>
 
 
-    
+    <script src="scripts/formsubmission.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

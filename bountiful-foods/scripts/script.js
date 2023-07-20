@@ -20,7 +20,7 @@ fetch('fruit.json')
     selectInputs.forEach(select => {
       data.forEach(fruit => {
         const option = document.createElement('option');
-        option.value = fruit.name;
+        option.value = fruit.value;
         option.textContent = fruit.name;
         select.appendChild(option);
       });
