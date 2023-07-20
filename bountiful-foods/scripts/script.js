@@ -27,6 +27,7 @@ fetch('fruit.json')
     });
 });
 
+/* function to update drink counter text on homepage */
 function updateDrinkCount() {
   let counter = localStorage.getItem('drinkCounter');
   const countElement = document.querySelector('.drink-counter');

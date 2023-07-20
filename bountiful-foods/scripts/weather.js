@@ -23,7 +23,7 @@ async function currentFetch() {
 }
 
 // url for forecast
-const urlForecast = 'https://api.openweathermap.org/data/3.0/onecall?q=Carlsbad&exclude=minutely,hourly,alerts&units=imperial&appid=b035c182740bd0af877a07c455f739fc';
+const urlForecast = 'https://api.openweathermap.org/data/3.0/onecall?lat=33.128780&lon=-117.314710&exclude=minutely,hourly,alerts&units=imperial&appid=b035c182740bd0af877a07c455f739fc';
 
 // get data for forecast
 async function forecastFetch() {
@@ -31,7 +31,7 @@ async function forecastFetch() {
       const response = await fetch(urlForecast);
       if (response.ok) {
         const forecastData = await response.json();
-        console.log(forecastData); // this is for testing the call
+        console.log(forecastData);
         displayForecast(forecastData);
       } else {
           throw Error(await response.text());
@@ -56,8 +56,12 @@ function displayForecast(forecastData) {
 
   // loop 3 times to get data for next 3 days
   for (let i = 0; i < 3; i++) {
-    console.log(forecastData);
+    highTemps.push(Math.round(forecastData.daily[i].temp.max, 0));
+    lowTemps.push(Math.round(forecastData.daily[i].temp.min, 0));
   }
+
+  // update html
+  forecastElement.innerHTML = `${lowTemps[0]}/${highTemps[0]}, ${lowTemps[1]}/${highTemps[1]}, ${lowTemps[2]}/${highTemps[2]}`;
 
 }
 
