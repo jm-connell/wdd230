@@ -2,6 +2,7 @@
 const form = document.querySelector('.drink-form');
 const outputElement = document.querySelector('.form-output');
 
+// get health info of 3 fruits (unfinished)
 function getHealth(fruit1, fruit2, fruit3) {
     const url = 'fruit.json';
     var healthData = [];
@@ -69,6 +70,18 @@ function getFormData() {
 
     // display output div
     outputElement.style.display = 'block';
+
+    // update counter in local storage
+    let counter = localStorage.getItem('drinkCounter');
+
+    if (!counter) {
+      counter = 0;
+    }
+
+    counter++;
+
+    localStorage.setItem('drinkCounter', counter);
+    console.log('counter is at', counter);
 
 }
 

@@ -25,4 +25,13 @@ fetch('fruit.json')
         select.appendChild(option);
       });
     });
-  });
+});
+
+function updateDrinkCount() {
+  let counter = localStorage.getItem('drinkCounter');
+  const countElement = document.querySelector('.drink-counter');
+  countElement.innerHTML = `<strong>${counter}</strong>`;
+  console.log('counter is at', counter);
+}
+
+updateDrinkCount();
